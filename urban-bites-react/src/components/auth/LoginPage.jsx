@@ -104,12 +104,12 @@ const LoginPage = () => {
                             <span className="login-separator-text-food">Or continue with</span>
                         </div>
 
-                        <div className="login-social-buttons-food">
+                        {/* <div className="login-social-buttons-food"> */}
                             {/* Add social login buttons here (e.g., Google, Facebook, GitHub) */}
-                            <button className="login-social-button-food login-social-google-food">Google</button>
+                            {/* <button className="login-social-button-food login-social-google-food">Google</button>
                             <button className="login-social-button-food login-social-facebook-food">Facebook</button>
-                            <button className="login-social-button-food login-social-github-food">Github</button>
-                        </div>
+                            <button className="login-social-button-food login-social-github-food">Github</button> */}
+                        {/* </div> */}
                     </div>
                 </div>
             </div>

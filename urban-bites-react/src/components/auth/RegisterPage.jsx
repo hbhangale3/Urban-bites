@@ -191,12 +191,12 @@ const RegisterPage = () => {
                             <span className="register-separator-text-food">Or continue with</span>
                         </div>
 
-                        <div className="register-social-buttons-food">
+                        {/* <div className="register-social-buttons-food"> */}
                             {/* Add social login buttons here (e.g., Google, Facebook, GitHub) */}
-                            <button className="register-social-button-food register-social-google-food">Google</button>
+                            {/* <button className="register-social-button-food register-social-google-food">Google</button>
                             <button className="register-social-button-food register-social-facebook-food">Facebook</button>
-                            <button className="register-social-button-food register-social-github-food">Github</button>
-                        </div>
+                            <button className="register-social-button-food register-social-github-food">Github</button> */}
+                        {/* </div> */}
                     </div>
                 </div>
             </div>

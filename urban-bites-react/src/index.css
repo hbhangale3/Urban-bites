@@ -236,25 +236,39 @@ nav {
 
 /** REGISTRATION PAGE*/
 .register-page-food {
-    min-height: 100vh;
-    background-color: #f4f4f4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 3rem;
+    
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f4f4;
+
+  /* rock-solid centering */
+  display: grid;
+  place-items: center;
+
+  /* breathing room */
+  padding: 3rem 1.5rem;
+  font-family: 'Arial', sans-serif;
+
+    /* padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-right: 1.5rem; */
     font-family: 'Arial', sans-serif;
 }
 
 .register-card-food {
-    width: 100%;
+  width: min(450px, 92vw);
+  margin-inline: auto;
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.1);  
+  /* width: 100%;
     max-width: 500px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     background-color: #fff;
-    border: none;
+    border: none; */
 }
 
 .register-header-food {
@@ -284,7 +298,10 @@ nav {
 }
 
 .register-form-food {
-    margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  margin-top: 1rem;
 }
 
 .register-form-group {
@@ -300,6 +317,7 @@ nav {
 }
 
 .register-input-food {
+    box-sizing: border-box;
     display: block;
     width: 100%;
     padding: 0.8rem 1.2rem;
@@ -470,7 +488,21 @@ nav {
 /**LOGIN PAGE*/
 
 .login-page-food {
-    min-height: 100vh;
+  
+   /* full-viewport area behind the card */
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f4f4;
+
+  /* rock-solid centering */
+  display: grid;
+  place-items: center;
+
+  /* breathing room */
+  padding: 3rem 1.5rem;
+  font-family: 'Arial', sans-serif;
+  
+    /* min-height: 100vh;
     background-color: #f4f4f4;
     display: flex;
     align-items: center;
@@ -479,16 +511,25 @@ nav {
     padding-bottom: 3rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; */
 }
 
 .login-card-food {
-    width: 100%;
+  width: min(450px, 92vw);
+  margin-inline: auto;
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.1);
+
+  /* NEW: space for the form so inputs don't touch the edge */
+  padding: 28px;
+    /* width: 100%;
     max-width: 450px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     background-color: #fff;
-    border: none;
+    border: none; */
 }
 
 .login-header-food {
@@ -518,7 +559,10 @@ nav {
 }
 
 .login-form-food {
-    margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;   
+    /* margin-top: 1rem; */
 }
 
 .login-form-group {
@@ -534,6 +578,8 @@ nav {
 }
 
 .login-input-food {
+  /* NEW: prevent overflow caused by padding + borders */
+    box-sizing: border-box;
     display: block;
     width: 100%;
     padding: 0.8rem 1.2rem;
